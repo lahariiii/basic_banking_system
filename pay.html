@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+    {% block body %}
+    <div class=jumbotron>
+        <h3>
+        <span style="padding:10px"><a href="/">Home</a></span>
+        <span style="padding:10px"><a href="/customers">Customers</a></span>
+        <span style="padding:10px"><a href="/pay">Pay</a></span>
+        <span style="padding:10px"><a href="/transactions">Transactions</a></span>
+    </h3>
+    </div>
+    <div>
+        <form method = "POST">
+            <h2>Enter the details of recipient</h2>
+            <div>
+           <span style="padding-right:37px">Enter Name</span>
+           <input type="name" name="name" />
+        </div>
+        <div>
+           <span>Enter Account no.</span>
+           <input type="account" name="account" />
+        </div>
+        <div>
+           <span style="padding-right:26px">Enter Amount</span>
+           <input type="amount" name="amount" />
+        </div>
+           <div>
+           <input type=submit />
+        </div>
+    </div>
+    {% if send == "name" %}
+    <span style="background-color:rgb(233, 145, 145); margin-top: 500px;font-size: large;">*Enter all the details*</span>
+    {% endif %} 
+    {% if send == "no" %}
+    <span style="background-color:rgb(224, 142, 142); margin-top: 500px;font-size: large;">*Enter all the details*</span>
+    {% endif %} 
+    {% if send == "account" %}
+    <span style="background-color:rgb(85, 47, 47); margin-top: 500px;font-size: large;">*Enter all the details*</span>
+    {% endif %} 
+    {% endblock %}

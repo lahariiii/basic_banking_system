@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+    {% block body %}
+    <div class=jumbotron>
+        <h3>
+        <span style="padding:10px"><a href="/">Home</a></span>
+        <span style="padding:10px"><a href="/customers">Customers</a></span>
+        <span style="padding:10px"><a href="/pay">Pay</a></span>
+        <span style="padding:10px"><a href="/transactions">Transactions</a></span>
+    </h3>
+</div>
+<div>
+    <h1 style="text-align:center; padding: 16px;">Welcome to the banking system</h1>
+</div>
+<div style="text-align:center ; padding: 50px;">
+    <h2>
+    <span style=" padding: 26px"><a href="/pay">Send Money</a></span>
+    <span style=" padding: 26px"><a href="/transactions">Check your Transactions</a></span>
+</h2>
+</div>
+    {% endblock %}

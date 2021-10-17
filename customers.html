@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+    {% block body %}
+    <div class=jumbotron>
+      <h3>
+      <span style="padding:10px"><a href="/">Home</a></span>
+      <span style="padding:10px"><a href="/customers">Customers</a></span>
+      <span style="padding:10px"><a href="/pay">Pay</a></span>
+      <span style="padding:10px"><a href="/transactions">Transactions</a></span>
+  </h3>
+  </div>
+    <div>
+     <h1>Customers</h1>
+    </div>
+       <table border=3>
+        <tr>
+            <th style="padding: 10px;"> Id</th>
+            <th style="padding: 10px;">Name of the customer</th>
+          <th style="padding: 10px;">Account no.</th>
+          <th style="padding: 10px;">Email</th>
+      </tr>
+        {% for customer in customers %}
+        <tr> 
+            <td>{{customer.customer_id}}</td>
+            <td>{{customer.name}}</td>
+            <td>{{customer.account}}</td>
+            <td>{{customer.email}}</td>
+          </tr>
+        {% endfor %}
+        </table>
+    {% endblock %}
