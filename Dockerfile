@@ -10,5 +10,5 @@ ADD . /app
 # run pip to install the dependencies of the flask app
 RUN pip install --upgrade pip
 # command to run the program
-ENTRYPOINT [ "python" ]
+EXPOSE 5000
 CMD [ "app.py" ]
