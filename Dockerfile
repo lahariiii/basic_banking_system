@@ -12,4 +12,4 @@ RUN pip install -r requirements.txt
 
 # command to run the program
 ENTRYPOINT [ "python" ]
-CMD [ "area.py" ]
+CMD [ "app.py" ]
