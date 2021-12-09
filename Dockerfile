@@ -11,4 +11,4 @@ ADD . /app
 RUN pip install --upgrade pip
 # command to run the program
 EXPOSE 5000
-CMD [ "app.py" ]
+CMD [ "app","m","flask","run","--host=0.0.0.0" ]
