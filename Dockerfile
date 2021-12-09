@@ -8,7 +8,7 @@ WORKDIR /app
 ADD . /app
 
 # run pip to install the dependencies of the flask app
-RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
 # command to run the program
 EXPOSE 5000
-CMD [ "python3","m","flask","run","--host=0.0.0.0" ]
+CMD [ "python3","app.py" ]
