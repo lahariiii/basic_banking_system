@@ -8,8 +8,7 @@ WORKDIR /app
 ADD . /app
 
 # run pip to install the dependencies of the flask app
-RUN pip install -r requirements.txt
-
+RUN pip install --upgrade pip
 # command to run the program
 ENTRYPOINT [ "python" ]
 CMD [ "app.py" ]
